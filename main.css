@@ -1,0 +1,16 @@
+.messageDiv, .idDiv {
+  float: left;
+  width: 50%; /* Set width according to your requirements */
+  height: 100px; /* Set height according to your requirements */
+  padding-bottom: 10px;
+}
+
+.resultDiv {
+  width: 100%;
+}
+
+.resultBox {
+  width: 100%;
+  border: 1px solid black;
+  overflow-wrap: break-word;
+}

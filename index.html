@@ -1,9 +1,30 @@
 <html> 
   <head>
-    <title>Hello World</title> 
+    <title>Encryption Website</title> 
+    <link rel="stylesheet" href="main.css">
   </head>
 
   <body> 
-    <h1>Hello World</h1> 
+    <header>
+      <h1>ENCRYPT IT</h1> 
+    </header>
+    <h2>Enter the message you want to encrypt/decrypt and the key in their respective textboxes, and press go.</h2>
+
+    <div class="messageDiv">
+      <h3>Message:</h3>
+      <textarea id="messageBox" placeholder="Enter your message here"></textarea>
+    </div>
+
+    <div class="idDiv">
+      <h3>ID:</h3>
+      <textarea id="idBox" placeholder="Enter your key here"></textarea>
+    </div>
+
+    <button>GO</button>
+
+    <div class="resultDiv">
+      <h3>Encrypted Message:</h3>
+      <h4 class="resultBox">amazing</h4>
+    </div>
   </body>
 </html>
