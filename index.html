@@ -2,6 +2,7 @@
   <head>
     <title>Encryption Website</title> 
     <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
   </head>
 
   <body> 
@@ -16,15 +17,15 @@
     </div>
 
     <div class="idDiv">
-      <h3>ID:</h3>
-      <textarea id="idBox" placeholder="Enter your key here"></textarea>
+      <h3>Key:</h3>
+      <textarea key="keyBox" placeholder="Enter your key here"></textarea>
     </div>
 
-    <button>GO</button>
+    <button onclick="encrypt()">GO</button>
 
     <div class="resultDiv">
       <h3>Encrypted Message:</h3>
-      <h4 class="resultBox">amazing</h4>
+      <h4 id="resultBox" class="resultBox">amazing</h4>
     </div>
   </body>
 </html>
