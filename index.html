@@ -1,7 +1,7 @@
 <html> 
   <head>
     <title>Encryption Website</title> 
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
   </head>
 
@@ -10,24 +10,33 @@
       <h1>ENCRYPT IT</h1> 
     </header>
     <h2>Enter the message you want to encrypt/decrypt and the key in their respective textboxes, and press go.</h2>
+    
     <div class="wrapper">
-      <div class="messageDiv">
-        <h3>Message:</h3>
-        <textarea id="messageBox" placeholder="Enter your message here"></textarea>
+      
+      <div class="card">
+        <div class="messageDiv">
+          <h3>Message:</h3>
+          <textarea id="messageBox" placeholder="Enter your message here"></textarea>
+        </div>
       </div>
 
-      <div class="idDiv">
-        <h3>Key:</h3>
-        <textarea id="keyBox" placeholder="Enter your key here"></textarea>
+      <div class="card">
+        <div class="idDiv">
+          <h3>Key:</h3>
+          <textarea id="keyBox" placeholder="Enter your key here"></textarea>
+        </div>
       </div>
 
       <div class="buttons">
-        <button onclick="encrypt()">ENCRYPT</button>
-        <button onclick="decrypt()">DECRYPT</button>
+        <button class="button" data-text="Awesome" onclick="encrypt()"><span class="actual-text">&nbsp;ENCRYPT&nbsp;</span>
+          <span aria-hidden="true" class="hover-text">&nbsp;ENCRYPT&nbsp;</span></button>
+        <button class="button" data-text="Awesome" onclick="decrypt()"><span class="actual-text">&nbsp;DECRYPT&nbsp;</span>
+          <span aria-hidden="true" class="hover-text">&nbsp;DECRYPT&nbsp;</span></button>
       </div>
+
     </div>
 
-    <div class="resultDiv">
+    <div class="resultDiv" >
       <h3>Encrypted Message:</h3>
       <h4 id="resultBox" class="resultBox">amazing</h4>
     </div>

@@ -3,7 +3,7 @@ function ojCipher(message){
   let characters = message.split("");
   
   // Loop through the array and switch characters in pairs
-  for (let i = 0; i < characters.length - 1; i += 2) {
+  for (let i = 0; i < characters.length -1; i += 2) {
     // Swap characters at even and odd indices
     let temp = characters[i];
     characters[i] = characters[i + 1];
@@ -12,6 +12,7 @@ function ojCipher(message){
   
   // Join the characters array back into a string and return
   return characters.join("");
+  ;
 }
 
 function vigenereEncrypt(plaintext, keyword) {
@@ -82,7 +83,10 @@ function encrypt(){
     final = ojCipher(final);
     final = vigenereEncrypt(final, key.value);
 
-    result.innerHTML = final;
+    if(final == ""){
+        final = "No message input";
+    }
+    result.innerHTML = final.replace(/ /g, '&nbsp;');;
 }
 
 function decrypt(){
@@ -96,5 +100,8 @@ function decrypt(){
     final = vigenereDecrypt(final, key.value); 
     final = ojCipher(final);
 
-    result.innerHTML = final;
+    if(final == ""){
+        final = "No message input";
+    }
+    result.innerHTML = final.replace(/ /g, '&nbsp;');;
 }
