@@ -1,8 +1,28 @@
-.messageDiv, .idDiv {
-  float: left;
-  width: 50%; /* Set width according to your requirements */
-  height: 100px; /* Set height according to your requirements */
-  padding-bottom: 10px;
+
+.wrapper {
+  display:grid;
+  max-width: 100%;
+  background: #A0C5E8;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.messageDiv, .idDiv{
+  background-color: green;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.buttons{
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+button{
+  margin: 7px
 }
 
 .resultDiv {

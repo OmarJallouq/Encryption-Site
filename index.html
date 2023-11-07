@@ -10,18 +10,22 @@
       <h1>ENCRYPT IT</h1> 
     </header>
     <h2>Enter the message you want to encrypt/decrypt and the key in their respective textboxes, and press go.</h2>
+    <div class="wrapper">
+      <div class="messageDiv">
+        <h3>Message:</h3>
+        <textarea id="messageBox" placeholder="Enter your message here"></textarea>
+      </div>
 
-    <div class="messageDiv">
-      <h3>Message:</h3>
-      <textarea id="messageBox" placeholder="Enter your message here"></textarea>
+      <div class="idDiv">
+        <h3>Key:</h3>
+        <textarea id="keyBox" placeholder="Enter your key here"></textarea>
+      </div>
+
+      <div class="buttons">
+        <button onclick="encrypt()">ENCRYPT</button>
+        <button onclick="decrypt()">DECRYPT</button>
+      </div>
     </div>
-
-    <div class="idDiv">
-      <h3>Key:</h3>
-      <textarea key="keyBox" placeholder="Enter your key here"></textarea>
-    </div>
-
-    <button onclick="encrypt()">GO</button>
 
     <div class="resultDiv">
       <h3>Encrypted Message:</h3>
